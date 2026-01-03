@@ -1,5 +1,4 @@
-@import "tailwindcss/preflight";
-@tailwind utilities;
+@import "tailwindcss"; 
 
 /* Tailwind v4 Theme Configuration */
 @theme {
