@@ -9,7 +9,7 @@ export default function AboutPage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative bg-linear-to-br from-blue-900 to-blue-800 text-white py-20 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-blue-900 to-blue-800 text-white py-20 overflow-hidden">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-5">
           <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtb3BhY2l0eT0iMC40Ij48cGF0aCBkPSJNMzYgMzR2LTRoLTJ2NGgtNHYyaDR2NGgydi00aDR2LTJoLTR6bTAtMzBWMGgtMnY0aC00djJoNHY0aDJWNmg0VjRoLTR6TTYgMzR2LTRINHY0SDB2Mmg0djRoMnYtNGg0di0ySDZ6TTYgNFYwSDR2NEgwdjJoNHY0aDJWNmg0VjRINnoiLz48L2c+PC9nPjwvc3ZnPg==')]" />
@@ -37,7 +37,7 @@ export default function AboutPage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
             {/* Image */}
             <div className="relative">
-              <div className="aspect-4/3 relative rounded-2xl overflow-hidden shadow-2xl">
+              <div className="aspect-[4/3] relative rounded-2xl overflow-hidden shadow-2xl">
                 <Image
                   src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&h=600&fit=crop"
                   alt="Asam Tree restaurant"
@@ -175,7 +175,7 @@ export default function AboutPage() {
             <div className="grid md:grid-cols-2 gap-8">
               {/* Feature 1 */}
               <div className="flex gap-4">
-                <div className="shrink-0">
+                <div className="flex-shrink-0">
                   <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
                     <CheckCircle className="w-6 h-6 text-green-600" />
                   </div>
@@ -193,7 +193,7 @@ export default function AboutPage() {
 
               {/* Feature 2 */}
               <div className="flex gap-4">
-                <div className="shrink-0">
+                <div className="flex-shrink-0">
                   <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
                     <Clock className="w-6 h-6 text-blue-600" />
                   </div>
@@ -211,7 +211,7 @@ export default function AboutPage() {
 
               {/* Feature 3 */}
               <div className="flex gap-4">
-                <div className="shrink-0">
+                <div className="flex-shrink-0">
                   <div className="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center">
                     <Award className="w-6 h-6 text-yellow-600" />
                   </div>
@@ -229,7 +229,7 @@ export default function AboutPage() {
 
               {/* Feature 4 */}
               <div className="flex gap-4">
-                <div className="shrink-0">
+                <div className="flex-shrink-0">
                   <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center">
                     <Users className="w-6 h-6 text-orange-600" />
                   </div>
@@ -247,7 +247,7 @@ export default function AboutPage() {
 
               {/* Feature 5 */}
               <div className="flex gap-4">
-                <div className="shrink-0">
+                <div className="flex-shrink-0">
                   <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
                     <Star className="w-6 h-6 text-purple-600" />
                   </div>
@@ -265,7 +265,7 @@ export default function AboutPage() {
 
               {/* Feature 6 */}
               <div className="flex gap-4">
-                <div className="shrink-0">
+                <div className="flex-shrink-0">
                   <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center">
                     <Heart className="w-6 h-6 text-red-600" />
                   </div>
@@ -302,10 +302,10 @@ export default function AboutPage() {
             <div className="space-y-12">
               {/* 2010 */}
               <div className="flex gap-8">
-                <div className="shrink-0 w-24 text-right">
+                <div className="flex-shrink-0 w-24 text-right">
                   <div className="text-3xl font-bold text-blue-900">2010</div>
                 </div>
-                <div className="shrink-0 relative">
+                <div className="flex-shrink-0 relative">
                   <div className="w-4 h-4 bg-blue-900 rounded-full mt-2"></div>
                   <div className="w-px h-full bg-blue-200 absolute left-1/2 -translate-x-1/2 top-6"></div>
                 </div>
@@ -320,10 +320,10 @@ export default function AboutPage() {
 
               {/* 2012 */}
               <div className="flex gap-8">
-                <div className="shrink-0 w-24 text-right">
+                <div className="flex-shrink-0 w-24 text-right">
                   <div className="text-3xl font-bold text-blue-900">2012</div>
                 </div>
-                <div className="shrink-0 relative">
+                <div className="flex-shrink-0 relative">
                   <div className="w-4 h-4 bg-blue-900 rounded-full mt-2"></div>
                   <div className="w-px h-full bg-blue-200 absolute left-1/2 -translate-x-1/2 top-6"></div>
                 </div>
@@ -338,10 +338,10 @@ export default function AboutPage() {
 
               {/* 2015 */}
               <div className="flex gap-8">
-                <div className="shrink-0 w-24 text-right">
+                <div className="flex-shrink-0 w-24 text-right">
                   <div className="text-3xl font-bold text-blue-900">2015</div>
                 </div>
-                <div className="shrink-0 relative">
+                <div className="flex-shrink-0 relative">
                   <div className="w-4 h-4 bg-blue-900 rounded-full mt-2"></div>
                   <div className="w-px h-full bg-blue-200 absolute left-1/2 -translate-x-1/2 top-6"></div>
                 </div>
@@ -356,10 +356,10 @@ export default function AboutPage() {
 
               {/* 2018 */}
               <div className="flex gap-8">
-                <div className="shrink-0 w-24 text-right">
+                <div className="flex-shrink-0 w-24 text-right">
                   <div className="text-3xl font-bold text-blue-900">2018</div>
                 </div>
-                <div className="shrink-0 relative">
+                <div className="flex-shrink-0 relative">
                   <div className="w-4 h-4 bg-blue-900 rounded-full mt-2"></div>
                   <div className="w-px h-full bg-blue-200 absolute left-1/2 -translate-x-1/2 top-6"></div>
                 </div>
@@ -374,10 +374,10 @@ export default function AboutPage() {
 
               {/* 2020 */}
               <div className="flex gap-8">
-                <div className="shrink-0 w-24 text-right">
+                <div className="flex-shrink-0 w-24 text-right">
                   <div className="text-3xl font-bold text-blue-900">2020</div>
                 </div>
-                <div className="shrink-0 relative">
+                <div className="flex-shrink-0 relative">
                   <div className="w-4 h-4 bg-blue-900 rounded-full mt-2"></div>
                   <div className="w-px h-full bg-blue-200 absolute left-1/2 -translate-x-1/2 top-6"></div>
                 </div>
@@ -392,10 +392,10 @@ export default function AboutPage() {
 
               {/* 2024 */}
               <div className="flex gap-8">
-                <div className="shrink-0 w-24 text-right">
+                <div className="flex-shrink-0 w-24 text-right">
                   <div className="text-3xl font-bold text-blue-900">2024</div>
                 </div>
-                <div className="shrink-0">
+                <div className="flex-shrink-0">
                   <div className="w-4 h-4 bg-yellow-300 rounded-full mt-2"></div>
                 </div>
                 <div className="flex-1">
@@ -415,9 +415,9 @@ export default function AboutPage() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <div className="bg-linear-to-br from-green-50 to-emerald-50 rounded-2xl p-8 md:p-12 border-2 border-green-200">
+            <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-8 md:p-12 border-2 border-green-200">
               <div className="flex flex-col md:flex-row items-center gap-8">
-                <div className="shrink-0">
+                <div className="flex-shrink-0">
                   <div className="w-24 h-24 bg-green-600 rounded-full flex items-center justify-center">
                     <Shield className="w-12 h-12 text-white" />
                   </div>
@@ -442,7 +442,7 @@ export default function AboutPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-linear-to-br from-blue-900 to-blue-800 text-white">
+      <section className="py-20 bg-gradient-to-br from-blue-900 to-blue-800 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6">
             Experience Our Story

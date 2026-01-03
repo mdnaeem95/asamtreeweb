@@ -44,20 +44,20 @@ export function Footer() {
             <h3 className="font-bold mb-4">Contact Us</h3>
             <div className="space-y-3 text-sm">
               <div className="flex items-start gap-2 text-slate-400">
-                <Phone className="w-4 h-4 mt-0.5 shrink-0" />
+                <Phone className="w-4 h-4 mt-0.5 flex-shrink-0" />
                 <div>
                   <p className="text-white font-medium">+65 6234 5678</p>
                   <p className="text-xs">Mon-Sun: 6am - 8pm</p>
                 </div>
               </div>
               <div className="flex items-start gap-2 text-slate-400">
-                <Mail className="w-4 h-4 mt-0.5 shrink-0" />
+                <Mail className="w-4 h-4 mt-0.5 flex-shrink-0" />
                 <a href="mailto:info@asamtree.com.sg" className="hover:text-white transition">
                   info@asamtree.com.sg
                 </a>
               </div>
               <div className="flex items-start gap-2 text-slate-400">
-                <MapPin className="w-4 h-4 mt-0.5 shrink-0" />
+                <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
                 <p>6+ locations across Singapore</p>
               </div>
             </div>

@@ -28,7 +28,7 @@ export default function BranchesPage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="bg-linear-to-br from-blue-900 to-blue-800 text-white py-16">
+      <section className="bg-gradient-to-br from-blue-900 to-blue-800 text-white py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-5xl md:text-6xl font-serif font-bold mb-4">
@@ -174,7 +174,7 @@ export default function BranchesPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-linear-to-br from-blue-900 to-blue-800 text-white">
+      <section className="py-16 bg-gradient-to-br from-blue-900 to-blue-800 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold mb-4">Can&apos;t Visit Us?</h2>
           <p className="text-xl text-blue-100 mb-8">

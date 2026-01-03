@@ -69,7 +69,7 @@ export function PopularDishes() {
               className="group bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden border border-slate-100"
             >
               {/* Image */}
-              <div className="relative aspect-4/3 overflow-hidden bg-slate-100">
+              <div className="relative aspect-[4/3] overflow-hidden bg-slate-100">
                 <Image
                   src={dish.image}
                   alt={dish.name}

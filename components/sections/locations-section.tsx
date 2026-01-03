@@ -75,7 +75,7 @@ export function LocationsSection() {
             >
               {/* Location Name */}
               <h3 className="text-xl font-bold text-slate-900 mb-4 flex items-start gap-2">
-                <MapPin className="w-5 h-5 text-blue-900 shrink-0 mt-1" />
+                <MapPin className="w-5 h-5 text-blue-900 flex-shrink-0 mt-1" />
                 {location.name}
               </h3>
 

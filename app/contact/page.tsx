@@ -9,7 +9,7 @@ export default function ContactPage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="bg-linear-to-br from-blue-900 to-blue-800 text-white py-16">
+      <section className="bg-gradient-to-br from-blue-900 to-blue-800 text-white py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-5xl md:text-6xl font-serif font-bold mb-4">
@@ -37,7 +37,7 @@ export default function ContactPage() {
                 {/* Main Office */}
                 <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center shrink-0">
+                    <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
                       <MapPin className="w-6 h-6 text-blue-900" />
                     </div>
                     <div>
@@ -51,7 +51,7 @@ export default function ContactPage() {
                 {/* Phone */}
                 <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center shrink-0">
+                    <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
                       <Phone className="w-6 h-6 text-green-600" />
                     </div>
                     <div>
@@ -70,7 +70,7 @@ export default function ContactPage() {
                 {/* Email */}
                 <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center shrink-0">
+                    <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
                       <Mail className="w-6 h-6 text-purple-600" />
                     </div>
                     <div>
@@ -94,7 +94,7 @@ export default function ContactPage() {
                 {/* Business Hours */}
                 <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center shrink-0">
+                    <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0">
                       <Clock className="w-6 h-6 text-orange-600" />
                     </div>
                     <div>
@@ -129,7 +129,7 @@ export default function ContactPage() {
                     href="#"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-12 h-12 bg-linear-to-br from-purple-600 to-pink-500 rounded-lg flex items-center justify-center hover:from-purple-700 hover:to-pink-600 transition group"
+                    className="w-12 h-12 bg-gradient-to-br from-purple-600 to-pink-500 rounded-lg flex items-center justify-center hover:from-purple-700 hover:to-pink-600 transition group"
                   >
                     <Instagram className="w-6 h-6 text-white" />
                   </a>
@@ -250,7 +250,7 @@ export default function ContactPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-linear-to-br from-blue-900 to-blue-800 text-white">
+      <section className="py-16 bg-gradient-to-br from-blue-900 to-blue-800 text-white">
         <div className="container mx-auto px-4 text-center">
           <MessageCircle className="w-16 h-16 mx-auto mb-4 text-yellow-300" />
           <h2 className="text-3xl font-bold mb-4">

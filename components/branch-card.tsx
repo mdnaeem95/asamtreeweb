@@ -32,7 +32,7 @@ export function BranchCard({ branch }: BranchCardProps) {
         {/* Address */}
         <div className="space-y-3 mb-6">
           <div className="flex items-start gap-3">
-            <MapPin className="w-5 h-5 text-slate-400 shrink-0 mt-0.5" />
+            <MapPin className="w-5 h-5 text-slate-400 flex-shrink-0 mt-0.5" />
             <div>
               <p className="text-slate-700 font-medium">{branch.address}</p>
               <p className="text-slate-500 text-sm">{branch.postal}</p>
@@ -41,7 +41,7 @@ export function BranchCard({ branch }: BranchCardProps) {
 
           {/* Phone */}
           <div className="flex items-center gap-3">
-            <Phone className="w-5 h-5 text-slate-400 shrink-0" />
+            <Phone className="w-5 h-5 text-slate-400 flex-shrink-0" />
             <a 
               href={`tel:${branch.phone.replace(/\s/g, '')}`}
               className="text-blue-900 hover:text-blue-700 font-medium"
@@ -52,7 +52,7 @@ export function BranchCard({ branch }: BranchCardProps) {
 
           {/* Email */}
           <div className="flex items-center gap-3">
-            <Mail className="w-5 h-5 text-slate-400 shrink-0" />
+            <Mail className="w-5 h-5 text-slate-400 flex-shrink-0" />
             <a 
               href={`mailto:${branch.email}`}
               className="text-blue-900 hover:text-blue-700"
@@ -63,7 +63,7 @@ export function BranchCard({ branch }: BranchCardProps) {
 
           {/* Hours */}
           <div className="flex items-start gap-3">
-            <Clock className="w-5 h-5 text-slate-400 shrink-0 mt-0.5" />
+            <Clock className="w-5 h-5 text-slate-400 flex-shrink-0 mt-0.5" />
             <div className="text-sm">
               <p className="text-slate-700">
                 <span className="font-medium">Mon-Fri:</span> {branch.hours.weekday}

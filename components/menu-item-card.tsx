@@ -10,7 +10,7 @@ export function MenuItemCard({ item }: MenuItemCardProps) {
   return (
     <div className="group bg-white rounded-xl border border-slate-200 hover:border-blue-300 hover:shadow-lg transition-all duration-300 overflow-hidden">
       {/* Image */}
-      <div className="relative aspect-4/3 overflow-hidden bg-slate-100">
+      <div className="relative aspect-[4/3] overflow-hidden bg-slate-100">
         <Image
           src={item.image}
           alt={item.name}

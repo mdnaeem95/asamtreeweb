@@ -8,7 +8,7 @@ export function AboutSection() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left - Image */}
           <div className="relative">
-            <div className="aspect-4/3 relative rounded-2xl overflow-hidden shadow-2xl">
+            <div className="aspect-[4/3] relative rounded-2xl overflow-hidden shadow-2xl">
               <Image
                 src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800&h=600&fit=crop"
                 alt="Asam Tree Restaurant Interior"
@@ -53,7 +53,7 @@ export function AboutSection() {
             {/* Features */}
             <div className="grid sm:grid-cols-2 gap-4 mb-8">
               <div className="flex items-start gap-3">
-                <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center shrink-0">
+                <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
                   <CheckCircle className="w-5 h-5 text-green-600" />
                 </div>
                 <div>
@@ -63,7 +63,7 @@ export function AboutSection() {
               </div>
 
               <div className="flex items-start gap-3">
-                <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center shrink-0">
+                <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
                   <Heart className="w-5 h-5 text-blue-600" />
                 </div>
                 <div>
@@ -73,7 +73,7 @@ export function AboutSection() {
               </div>
 
               <div className="flex items-start gap-3">
-                <div className="w-10 h-10 bg-yellow-100 rounded-full flex items-center justify-center shrink-0">
+                <div className="w-10 h-10 bg-yellow-100 rounded-full flex items-center justify-center flex-shrink-0">
                   <Award className="w-5 h-5 text-yellow-600" />
                 </div>
                 <div>
@@ -83,7 +83,7 @@ export function AboutSection() {
               </div>
 
               <div className="flex items-start gap-3">
-                <div className="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center shrink-0">
+                <div className="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0">
                   <Users className="w-5 h-5 text-orange-600" />
                 </div>
                 <div>

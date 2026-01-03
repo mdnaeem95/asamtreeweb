@@ -24,7 +24,7 @@ export default function MenuPage() {
       <Header />
       
       {/* Hero Section */}
-      <section className="bg-linear-to-br from-blue-900 to-blue-800 text-white py-16">
+      <section className="bg-gradient-to-br from-blue-900 to-blue-800 text-white py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-5xl md:text-6xl font-serif font-bold mb-4">
