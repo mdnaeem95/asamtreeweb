@@ -1,105 +1,118 @@
-import { Award, Heart, Users, CheckCircle } from 'lucide-react'
-import Image from 'next/image'
+'use client'
+
+import { motion } from 'framer-motion'
+import { Leaf, Heart, Flame } from 'lucide-react'
+
+const stories = [
+  {
+    icon: Leaf,
+    title: 'The Name',
+    subtitle: '"Asam" - The Tamarind Tree',
+    description: 'In Malay, "asam" means tamarind - the tangy fruit that\'s essential to our traditional recipes. Just like the tamarind adds depth to our dishes, our restaurant adds flavor to the Ang Mo Kio community.',
+    color: 'text-primary-600',
+    bgColor: 'bg-primary-50',
+  },
+  {
+    icon: Heart,
+    title: 'The Founders',
+    subtitle: 'A Labor of Love',
+    description: 'Founded by a young couple with 10 years in F&B, Asam Tree was born from a simple dream: share authentic Malay cuisine with families in their neighborhood. Nestled beside NTUC Fairprice, we\'re your go-to for a delicious meal after grocery shopping.',
+    color: 'text-accent-600',
+    bgColor: 'bg-accent-50',
+  },
+  {
+    icon: Flame,
+    title: 'The Secret',
+    subtitle: 'Our Special Sambal',
+    description: 'Every regular knows: it\'s all about the sambal. Our secret recipe has become legendary. Ask for it at the counter - locals can never get enough! 🌶️',
+    color: 'text-secondary-600',
+    bgColor: 'bg-secondary-50',
+  },
+]
 
 export function AboutSection() {
   return (
-    <section className="py-20 bg-slate-50">
+    <section className="py-24 bg-white">
       <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left - Image */}
-          <div className="relative">
-            <div className="aspect-[4/3] relative rounded-2xl overflow-hidden shadow-2xl">
-              <Image
-                src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800&h=600&fit=crop"
-                alt="Asam Tree Restaurant Interior"
-                fill
-                className="object-cover"
-              />
-            </div>
-            {/* Floating Badge */}
-            <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-xl shadow-xl border-4 border-slate-50">
-              <div className="text-center">
-                <div className="text-4xl font-bold text-blue-900">15+</div>
-                <div className="text-sm text-slate-600 font-medium">Years Serving</div>
-                <div className="text-sm text-slate-600">Singapore</div>
-              </div>
-            </div>
-          </div>
+        
+        {/* Section header */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-16"
+        >
+          <span className="inline-block px-4 py-2 bg-primary-100 text-primary-700 rounded-full text-sm font-semibold mb-4">
+            Our Story
+          </span>
+          <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary-900 mb-4">
+            More Than Just a Restaurant
+          </h2>
+          <p className="text-xl text-neutral-600 max-w-2xl mx-auto">
+            Serving the Ang Mo Kio community since 2013 with authentic flavors and warm hospitality
+          </p>
+        </motion.div>
 
-          {/* Right - Content */}
-          <div>
-            <div className="inline-block px-4 py-2 bg-blue-100 text-blue-900 rounded-full text-sm font-semibold mb-4">
-              About Asam Tree
-            </div>
-            
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-slate-900 mb-6">
-              Authentic Flavors,
-              <br />
-              <span className="text-blue-900">Family Traditions</span>
-            </h2>
+        {/* 3-column story cards */}
+        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          {stories.map((story, index) => {
+            const Icon = story.icon
+            return (
+              <motion.div
+                key={story.title}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: index * 0.2 }}
+                className="group"
+              >
+                <div className="bg-white border border-neutral-200 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 h-full flex flex-col">
+                  
+                  {/* Icon */}
+                  <div className={`w-16 h-16 ${story.bgColor} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
+                    <Icon className={`w-8 h-8 ${story.color}`} />
+                  </div>
 
-            <p className="text-lg text-slate-600 mb-6 leading-relaxed">
-              Since 2010, Asam Tree has been serving authentic halal-certified Malay and Indonesian 
-              cuisine to families across Singapore. What started as a single location has grown to 
-              6+ branches, but our commitment remains the same: fresh ingredients, traditional recipes, 
-              and warm hospitality.
-            </p>
+                  {/* Title */}
+                  <div className="mb-4">
+                    <p className={`text-sm font-semibold ${story.color} uppercase tracking-wide mb-1`}>
+                      {story.title}
+                    </p>
+                    <h3 className="text-2xl font-serif font-bold text-primary-900">
+                      {story.subtitle}
+                    </h3>
+                  </div>
 
-            <p className="text-lg text-slate-600 mb-8 leading-relaxed">
-              Our signature Nasi Padang, Ayam Penyet, and traditional favorites are prepared fresh 
-              daily by our experienced chefs who bring generations of culinary expertise to every dish.
-            </p>
+                  {/* Description */}
+                  <p className="text-neutral-600 leading-relaxed flex-grow">
+                    {story.description}
+                  </p>
 
-            {/* Features */}
-            <div className="grid sm:grid-cols-2 gap-4 mb-8">
-              <div className="flex items-start gap-3">
-                <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
-                  <CheckCircle className="w-5 h-5 text-green-600" />
                 </div>
-                <div>
-                  <div className="font-semibold text-slate-900">Halal Certified</div>
-                  <div className="text-sm text-slate-600">MUIS certified ingredients</div>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-3">
-                <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
-                  <Heart className="w-5 h-5 text-blue-600" />
-                </div>
-                <div>
-                  <div className="font-semibold text-slate-900">Fresh Daily</div>
-                  <div className="text-sm text-slate-600">Prepared every morning</div>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-3">
-                <div className="w-10 h-10 bg-yellow-100 rounded-full flex items-center justify-center flex-shrink-0">
-                  <Award className="w-5 h-5 text-yellow-600" />
-                </div>
-                <div>
-                  <div className="font-semibold text-slate-900">Award Winning</div>
-                  <div className="text-sm text-slate-600">Recognized by food critics</div>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-3">
-                <div className="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0">
-                  <Users className="w-5 h-5 text-orange-600" />
-                </div>
-                <div>
-                  <div className="font-semibold text-slate-900">Family Friendly</div>
-                  <div className="text-sm text-slate-600">Air-conditioned comfort</div>
-                </div>
-              </div>
-            </div>
-            <a
-              href="/about"
-              className="inline-block px-8 py-3 bg-blue-900 text-white rounded-lg font-semibold hover:bg-blue-800 transition shadow-md hover:shadow-lg"
-            >
-              Learn More About Us
-            </a>
-          </div>
+              </motion.div>
+            )
+          })}
         </div>
+
+        {/* Bottom CTA */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.6 }}
+          className="text-center mt-16"
+        >
+          <div className="inline-block bg-neutral-50 px-8 py-6 rounded-2xl border border-neutral-200">
+            <p className="text-lg text-neutral-700 mb-2">
+              <span className="font-serif font-bold text-primary-700 text-xl">Fun fact:</span> We participated in the Ultimate Hawker Fest 2014, raising funds for Touch Community Services!
+            </p>
+            <p className="text-sm text-neutral-500">
+              Community has always been at the heart of what we do
+            </p>
+          </div>
+        </motion.div>
+
       </div>
     </section>
   )

@@ -7,46 +7,63 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        // Tamarind Brown - earthy, authentic, traditional
         primary: {
-          50: '#e6f2f8',
-          100: '#cce5f1',
-          200: '#99cbe3',
-          300: '#66b1d5',
-          400: '#3397c7',
-          500: '#0F4C75',
-          600: '#0c3d5e',
-          700: '#092e47',
-          800: '#061f30',
-          900: '#030f18',
+          50: '#fdf8f6',
+          100: '#f2e8e5',
+          200: '#eaddd7',
+          300: '#e0cec7',
+          400: '#d2bab0',
+          500: '#8B4513', // Main brand color - Saddle brown
+          600: '#7a3a10',
+          700: '#6B3410',
+          800: '#5c2d0e',
+          900: '#4d260c',
         },
-        secondary: {
-          50: '#e3f2f9',
-          100: '#c7e5f3',
-          200: '#8fcbe7',
-          300: '#57b1db',
-          400: '#1f97cf',
-          500: '#3282B8',
-          600: '#286893',
-          700: '#1e4e6e',
-          800: '#14344a',
-          900: '#0a1a25',
-        },
+        // Sambal Red - their secret weapon, bold, appetizing
         accent: {
-          50: '#fffdf5',
-          100: '#fffbeb',
-          200: '#fff7d6',
-          300: '#fff3c2',
-          400: '#ffefad',
-          500: '#FFE66D',
-          600: '#ccb857',
-          700: '#998a41',
-          800: '#665c2c',
-          900: '#332e16',
+          50: '#fef2f2',
+          100: '#fee2e2',
+          200: '#fecaca',
+          300: '#fca5a5',
+          400: '#f87171',
+          500: '#DC2626', // Spicy red
+          600: '#B91C1C',
+          700: '#991b1b',
+          800: '#7f1d1d',
+          900: '#6b1818',
+        },
+        // Fresh Green - halal certified, fresh ingredients
+        secondary: {
+          50: '#f0fdf4',
+          100: '#dcfce7',
+          200: '#bbf7d0',
+          300: '#86efac',
+          400: '#4ade80',
+          500: '#059669', // Emerald
+          600: '#047857',
+          700: '#065f46',
+          800: '#064e3b',
+          900: '#053d30',
+        },
+        // Warm Cream - comfort, family-friendly
+        neutral: {
+          50: '#FFF7ED',  // Warm cream
+          100: '#FFEDD5',
+          200: '#FED7AA',
+          300: '#FDBA74',
+          400: '#FB923C',
+          500: '#F97316',
+          600: '#EA580C',
+          700: '#C2410C',
+          800: '#9A3412',
+          900: '#44403C', // Warm gray
         },
       },
       fontFamily: {
-        sans: ['var(--font-inter)', 'sans-serif'],
-        serif: ['var(--font-playfair)', 'serif'],
+        sans: ['var(--font-open-sans)', 'sans-serif'],
+        serif: ['var(--font-merriweather)', 'serif'],
+        handwritten: ['var(--font-great-vibes)', 'cursive'],
       },
     },
   },

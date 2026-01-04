@@ -1,81 +1,82 @@
-import { Phone, ShoppingBag, Calendar } from 'lucide-react'
+'use client'
+
+import { motion } from 'framer-motion'
+import Link from 'next/link'
+import { Phone, MapPin, Clock } from 'lucide-react'
 
 export function CTASection() {
   return (
-    <section className="py-20 bg-gradient-to-br from-blue-900 to-blue-800 text-white relative overflow-hidden">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtb3BhY2l0eT0iMC40Ij48cGF0aCBkPSJNMzYgMzR2LTRoLTJ2NGgtNHYyaDR2NGgydi00aDR2LTJoLTR6bTAtMzBWMGgtMnY0aC00djJoNHY0aDJWNmg0VjRoLTR6TTYgMzR2LTRINHY0SDB2Mmg0djRoMnYtNGg0di0ySDZ6TTYgNFYwSDR2NEgwdjJoNHY0aDJWNmg0VjRINnoiLz48L2c+PC9nPjwvc3ZnPg==')]" />
+    <section className="relative py-24 bg-gradient-to-br from-primary-700 via-primary-600 to-accent-600 text-white overflow-hidden">
+      
+      {/* Background pattern */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute inset-0" style={{
+          backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)',
+          backgroundSize: '40px 40px'
+        }} />
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-4xl mx-auto text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4">
-            Ready to Experience Authentic Malay Cuisine?
-          </h2>
-          <p className="text-xl text-blue-100">
-            Visit us today or order online for delivery to your doorstep
-          </p>
-        </div>
-
-        {/* Action Cards */}
-        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-          {/* Order Online */}
-          <a
-            href="https://asamtree.oddle.me/en_SG/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group bg-white/10 backdrop-blur-sm border-2 border-white/20 rounded-xl p-8 hover:bg-white hover:border-white transition-all duration-300"
+        <div className="max-w-4xl mx-auto text-center">
+          
+          {/* Headline */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
           >
-            <div className="w-14 h-14 bg-yellow-300 rounded-full flex items-center justify-center mb-4 mx-auto group-hover:scale-110 transition-transform">
-              <ShoppingBag className="w-7 h-7 text-blue-900" />
-            </div>
-            <h3 className="text-xl font-bold mb-2 group-hover:text-blue-900 transition-colors">
-              Order Online
-            </h3>
-            <p className="text-blue-100 text-sm group-hover:text-slate-600 transition-colors">
-              Get your favorites delivered via Oddle
+            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6">
+              Ready to Taste Authentic Malay Cuisine?
+            </h2>
+            <p className="text-xl text-white/90 mb-10">
+              Visit us today at any of our 6 locations, or order online for delivery
             </p>
-          </a>
+          </motion.div>
 
-          {/* Call Us */}
-          <a
-            href="tel:+6562345678"
-            className="group bg-white/10 backdrop-blur-sm border-2 border-white/20 rounded-xl p-8 hover:bg-white hover:border-white transition-all duration-300"
+          {/* Action buttons */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="flex flex-col sm:flex-row gap-4 justify-center mb-12"
           >
-            <div className="w-14 h-14 bg-yellow-300 rounded-full flex items-center justify-center mb-4 mx-auto group-hover:scale-110 transition-transform">
-              <Phone className="w-7 h-7 text-blue-900" />
-            </div>
-            <h3 className="text-xl font-bold mb-2 group-hover:text-blue-900 transition-colors">
-              Call to Order
-            </h3>
-            <p className="text-blue-100 text-sm group-hover:text-slate-600 transition-colors">
-              Phone orders & inquiries: 6234 5678
-            </p>
-          </a>
+            <a
+              href="tel:+6562345678"
+              className="group px-8 py-4 bg-white text-primary-700 font-semibold rounded-lg hover:bg-neutral-50 hover:shadow-xl transition-all duration-200 flex items-center justify-center gap-2"
+            >
+              <Phone className="w-5 h-5" />
+              Call: 6234 5678
+            </a>
+            
+            <Link
+              href="/branches"
+              className="px-8 py-4 bg-accent-500 text-white font-semibold rounded-lg hover:bg-accent-600 hover:shadow-xl transition-all duration-200 flex items-center justify-center gap-2"
+            >
+              <MapPin className="w-5 h-5" />
+              Find Nearest Location
+            </Link>
+          </motion.div>
 
-          {/* Catering */}
-          <a
-            href="/catering"
-            className="group bg-white/10 backdrop-blur-sm border-2 border-white/20 rounded-xl p-8 hover:bg-white hover:border-white transition-all duration-300"
+          {/* Quick info */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            className="flex flex-wrap justify-center gap-8 text-sm text-white/80"
           >
-            <div className="w-14 h-14 bg-yellow-300 rounded-full flex items-center justify-center mb-4 mx-auto group-hover:scale-110 transition-transform">
-              <Calendar className="w-7 h-7 text-blue-900" />
+            <div className="flex items-center gap-2">
+              <Clock className="w-5 h-5" />
+              <span>Open Daily: 6am - 8pm</span>
             </div>
-            <h3 className="text-xl font-bold mb-2 group-hover:text-blue-900 transition-colors">
-              Catering Services
-            </h3>
-            <p className="text-blue-100 text-sm group-hover:text-slate-600 transition-colors">
-              Perfect for events & corporate functions
-            </p>
-          </a>
-        </div>
+            <div className="flex items-center gap-2">
+              <div className="w-3 h-3 bg-secondary-400 rounded-full animate-pulse" />
+              <span>100% Halal Certified</span>
+            </div>
+          </motion.div>
 
-        {/* Bottom Text */}
-        <div className="text-center mt-12">
-          <p className="text-blue-200 text-sm">
-            All our food is prepared with halal-certified ingredients
-          </p>
         </div>
       </div>
     </section>
